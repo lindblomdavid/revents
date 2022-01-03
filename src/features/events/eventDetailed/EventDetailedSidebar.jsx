@@ -12,7 +12,8 @@ export default function EventDetailedSidebar({ attendees }) {
         inverted
         color='teal'
       >
-        {attendees.length} {attendees.length > 1 ? "People" : "Person"}
+        {attendees.length}
+        {attendees.length > 1 ? "People" : "Person"} Going
       </Segment>
       <Segment attached>
         <Item.Group relaxed divided>

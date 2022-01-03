@@ -10,7 +10,6 @@ export default function EventDetailedPage({ match }) {
   const event = useSelector((state) =>
     state.event.events.find((e) => e.id === match.params.id)
   );
-
   return (
     <Grid>
       <Grid.Column width={10}>
@@ -19,7 +18,7 @@ export default function EventDetailedPage({ match }) {
         <EventDetailedChat />
       </Grid.Column>
       <Grid.Column width={6}>
-        <EventDetailedSidebar attendees={event.attendees} />
+        <EventDetailedSidebar attendees={event?.attendees} />
       </Grid.Column>
     </Grid>
   );
